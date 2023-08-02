@@ -1,0 +1,991 @@
+
+
+.App {
+
+ 
+
+    font-family: sans-serif;
+
+ 
+
+ 
+
+    display: flex;
+
+ 
+
+}
+
+ 
+
+.navbar {
+
+    background-color: #f5f5f5;
+
+    padding: 10px;
+
+}
+
+ 
+
+.navbar-nav {
+
+    list-style-type: none;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+ 
+
+.grid-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+ 
+
+    grid-gap: 50px;
+
+    /* Gap between grid items
+
+ 
+
+ 
+
+ 
+
+    /* margin: 0.25rem;
+
+    padding: 2rem 0;
+
+    border: 1px solid rgba(0,0,0,0.125);
+
+    border-radius: 2px;
+
+    width: 100px;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    padding-right: 6px; */
+
+ 
+
+}
+
+ 
+
+#resizableContainer {
+
+    position: relative;
+
+  }
+
+.drop-box ui-droppable-highlight{
+
+    background-color: steelblue;
+
+}
+
+#drag{
+
+    position: relative;
+
+}
+
+.fixed {
+
+    width: 700px;
+
+    height: 300px;
+
+    border: 1px solid;
+
+    background-color: #ccc
+
+}
+
+.grid-item {
+
+    background-color: #f5f5f5;
+
+    padding: 50px;
+
+}
+
+ 
+
+.nav-item {
+
+    margin-right: 10px;
+
+}
+
+ 
+
+.nav-link {
+
+    text-decoration: none;
+
+    color: #3d22d8;
+
+    padding: 5px 10px;
+
+}
+
+ 
+
+.nav-link:hover {
+
+    background-color: #ddd;
+
+}
+
+ 
+
+ul.no-bullets {
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+ 
+
+ 
+
+ 
+
+.resizable-draggable:active {
+
+    cursor: grabbing;
+
+}
+
+.resizable-draggable.constraint-area {
+
+    width: 500px;
+
+    height: 300px;
+
+    border: 1px solid;
+
+    background-color: #ccc;
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+.grid-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+
+    grid-gap: 8px; /* Gap between grid items */
+
+  }
+
+ 
+
+  .grid-item {
+
+    background-color: #f0f0f0;
+
+    padding: 8px;
+
+    cursor: move;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+  }
+
+ 
+
+  .create-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+
+    grid-gap: 8px; /* Gap between grid items */
+
+  }
+
+ 
+
+  .grid-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+
+    grid-gap: 10px; /* Gap between grid items */
+
+    margin-top: 10px;
+
+  }
+
+ 
+
+  .grid-item {
+
+    background-color: #f0f0f0;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+  }
+
+ 
+
+  .grid-item.selected {
+
+    background-color: blue;
+
+    color: white;
+
+  }
+
+ 
+
+.app {
+
+ 
+
+    width: 25%;
+
+ 
+
+    background-color: #34444c;
+
+ 
+
+    /* display: flex; */
+
+ 
+
+    min-height: 100vh;
+
+ 
+
+}
+
+ 
+
+ 
+
+.sidebar {
+
+ 
+
+    width: 20%;
+
+ 
+
+    flex-shrink: 0;
+
+ 
+
+    border-right: 1px solid #ddd;
+
+}
+
+.dragable-container{
+
+    width: 100px;
+
+    height: 100px;
+
+}
+
+.elementstyle{
+
+    position: relative;
+
+    left: 283px;
+
+    top: 66px;
+
+    width: 100px;
+
+    height: 40px;
+
+    padding: 5px;
+
+    margin: 1rem;
+
+    vertical-align: middle;
+
+    border: 1px dashed black;
+
+    cursor: move;
+
+    text-align: center;
+
+}
+
+.drag.style {
+
+    position: relative;
+
+    left: 61px;
+
+    top: 127px;}
+
+.navbar {
+
+    background-color: #f5f5f5;
+
+    padding: 10px;
+
+}
+
+ 
+
+.navbar-nav {
+
+    list-style-type: none;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+ 
+
+.nav-item {
+
+    margin-right: 10px;
+
+}
+
+ 
+
+.nav-link {
+
+    text-decoration: none;
+
+    color: #333;
+
+    padding: 5px 10px;
+
+}
+
+ 
+
+.nav-link:hover {
+
+    background-color: #ddd;
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+.content {
+
+ 
+
+    flex: 1;
+
+ 
+
+    padding: 1rem;
+
+ 
+
+}
+
+ 
+
+.remove {
+
+    list-style-type: none;
+
+}
+
+ 
+
+ 
+
+.metismenu {
+
+ 
+
+    /* width: max-content */
+
+ 
+
+}
+
+ 
+
+.metismenu,
+
+ 
+
+.metismenu ul {
+
+ 
+
+    padding: 0;
+
+ 
+
+    margin: 0;
+
+ 
+
+    list-style: none;
+
+ 
+
+    width: auto;
+
+ 
+
+    text-align: left;
+
+ 
+
+    /* background-color: gray; */
+
+ 
+
+}
+
+ 
+
+.resizable-div {
+
+    background-color: #f5f5f5;
+
+    resize: horizontal;
+
+    /* Allow horizontal resizing */
+
+    overflow: auto;
+
+    /* Enable scrollbars when content overflows */
+
+    padding: 10px;
+
+}
+
+ 
+
+ 
+
+.resizable-draggable {
+
+    background-color: #f5f5f5;
+
+    resize: both;
+
+    /* Allow both horizontal and vertical resizing */
+
+    overflow: auto;
+
+    /* Enable scrollbars when content overflows */
+
+    padding: 10px;
+
+    /* position: relative; */
+
+    cursor: grab;
+
+    min-width: 150px;
+
+    max-height: 300px;
+
+}
+
+ 
+
+.resizable-draggable:active {
+
+    cursor: grabbing;
+
+}
+
+ 
+
+ 
+
+.metismenu a {
+
+ 
+
+    display: block;
+
+ 
+
+    padding: 0.5rem 1rem;
+
+ 
+
+    text-decoration: none;
+
+ 
+
+    color: white;
+
+ 
+
+    background-color: #34444c;
+
+ 
+
+    padding: 5;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+.metismenu ul li a {
+
+ 
+
+    width: auto;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+.metismenu a:hover {
+
+ 
+
+    color: rgb(65, 98, 207);
+
+ 
+
+    background-color: #333;
+
+ 
+
+}
+
+ 
+
+.list-change-list {
+
+    position: relative;
+
+    display: block;
+
+    padding: 15px;
+
+    background-color: #fff;
+
+    border: 1px solid rgba(0, 0, 0, .125);
+
+    width: 60%;
+
+ 
+
+}
+
+.list-change-list:hover {
+
+ 
+
+    z-index: 1;
+
+    color: #495057;
+
+    text-decoration: none;
+
+    background-color: #f8f9fa;
+
+}
+
+ 
+
+ 
+
+.list-change-list-action{
+
+    position: relative;
+
+    display: block;
+
+    padding: 15px;
+
+    background-color: #fff;
+
+    border: 1px solid rgba(0, 0, 0, .125);
+
+    width: 60%;
+
+ 
+
+}
+
+.list-change-list-action:hover {
+
+    z-index: 2;
+
+    color: #fff;
+
+    background-color: #245f9f;;
+
+    border-color: #007bff;
+
+}
+
+ 
+
+ 
+
+ 
+
+.metismenu .active {
+
+ 
+
+    background: #dbdbdb;
+
+ 
+
+    color: rgb(65, 98, 207);
+
+ 
+
+    background-color: #333;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+.metismenu ul a {
+
+ 
+
+    padding-left: 2rem;
+
+ 
+
+    width: max-content;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/*!
+
+ 
+
+* metismenujs - v1.4.0
+
+ 
+
+* A menu plugin
+
+ 
+
+* https://github.com/onokumus/metismenujs#readme
+
+ 
+
+*
+
+ 
+
+* Made by Osman Nuri Okumus <onokumus@gmail.com> (https://github.com/onokumus)
+
+ 
+
+* Under MIT License
+
+ 
+
+*/
+
+ 
+
+:where(html) {
+
+ 
+
+    --mm-transition-timing-function: ease;
+
+ 
+
+    --mm-trantisition-duration: 0.35s;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.metismenu .mm-collapse:not(.mm-show) {
+
+ 
+
+    display: none;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.metismenu .mm-collapsing {
+
+ 
+
+    position: relative;
+
+ 
+
+    height: 0;
+
+ 
+
+    overflow: hidden;
+
+ 
+
+    flex-wrap: nowrap;
+
+ 
+
+    transition: height var(--mm-trantisition-duration) var(--mm-transition-timing-function);
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.metismenu .has-arrow {
+
+ 
+
+    position: relative;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.metismenu .has-arrow::after {
+
+ 
+
+    position: absolute;
+
+ 
+
+    content: "";
+
+ 
+
+    width: 0.5em;
+
+ 
+
+    height: 0.5em;
+
+ 
+
+    border-width: 0 0 1px 1px;
+
+ 
+
+    border-style: solid;
+
+ 
+
+    border-color: initial;
+
+ 
+
+    inset-inline-end: 1em;
+
+ 
+
+    transform: rotate(45deg) translate(0, -50%);
+
+ 
+
+    transform-origin: top;
+
+ 
+
+    top: 50%;
+
+ 
+
+    transition: transform var(--mm-trantisition-duration) var(--mm-transition-timing-function);
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+*[dir=rtl] .metismenu .has-arrow::after {
+
+ 
+
+    transform: rotate(-135deg) translate(0, -50%);
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.metismenu .mm-active>.has-arrow::after,
+
+ 
+
+.metismenu .has-arrow[aria-expanded=true]::after {
+
+ 
+
+    transform: rotate(-45deg) translate(0, -50%);
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+@media (prefers-reduced-motion: reduce) {
+
+ 
+
+    .metismenu .mm-collapsing,
+
+ 
+
+    .metismenu .has-arrow::after {
+
+ 
+
+        transition-duration: 0.000000001s;
+
+ 
+
+    }
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+/*# sourceMappingURL=metismenujs.css.map */
